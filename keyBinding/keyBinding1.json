@@ -1,0 +1,160 @@
+
+[
+
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "extension.vim_ctrl+n",
+    "when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode' && !inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode' && !inQuickOpen"
+  },
+
+  {
+    "key": "j",
+    "command": "list.focusAnyDown",
+    "when": "sideBarFocus && !inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+  },
+  {
+    "key": "k",
+    "command": "list.focusAnyUp",
+    "when": "sideBarFocus && !inputFocus && (vim.mode == 'Normal' || vim.mode == 'Visual')"
+  },
+
+  {
+    "key": "a",
+    "command": "workbench.files.action.createFileFromExplorer",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "workbench.files.action.createFileFromExplorer",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "workbench.files.action.createFolderFromExplorer",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "c",
+    "command": "filesExplorer.copy",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "moveFileToTrash",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "g y",
+    "command": "copyFilePath",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "y",
+    "command": "copyRelativeFilePath",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+
+  {
+    "key": "ctrl+h",
+    "command": "vscode-harpoon.gotoEditor1"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "vscode-harpoon.gotoEditor2"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "vscode-harpoon.gotoEditor3"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "vscode-harpoon.gotoEditor4"
+  },
+
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.focusSideBar",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorFocus && sideBarVisible"
+  },
+
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "y",
+    "command": "copyRelativeFilePath",
+    "when": "filesExplorerFocus && !inputFocus && vim.mode == 'Visual'"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "quokka.createJavaScriptFile",
+    "when": "!quokka.isLiveShareClient && !terminalFocus"
+  },
+  {
+    "key": "ctrl+k j",
+    "command": "-quokka.createJavaScriptFile",
+    "when": "!quokka.isLiveShareClient && !terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "quokka.createTypeScriptFile",
+    "when": "!quokka.isLiveShareClient && !terminalFocus"
+  },
+  {
+    "key": "ctrl+k t",
+    "command": "-quokka.createTypeScriptFile",
+    "when": "!quokka.isLiveShareClient && !terminalFocus"
+  }
+]
