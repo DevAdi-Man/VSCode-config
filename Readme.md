@@ -4,12 +4,16 @@ This repository contains my personalized VS Code configuration, including keybin
 
 ## 📁 File Structure
 ```
-.vscode/
-  ├── keybindings.json  # Custom keybindings
-  ├── settings.json     # Personalized settings
-  ├── extensions.txt    # List of installed extensions
-  ├── theme.txt         # Current theme
-  ├── snippets/         # Custom code snippets
+VsCode-Config/
+├─ .vscode/
+│  ├─ extensions.txt
+│  └─ theme.txt
+├─ keyBinding/
+│  ├─ keyBinding1.json
+│  └─ keyBinding2.json
+├─ Readme.md
+└─ setting.json
+
 ```
 
 ---
